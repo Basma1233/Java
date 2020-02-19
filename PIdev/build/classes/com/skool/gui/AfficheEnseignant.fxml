@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="481.0" prefWidth="806.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.skool.gui.AfficheEnseignantController">
+   <children>
+      <TableView fx:id="table" layoutX="12.0" layoutY="127.0" prefHeight="291.0" prefWidth="765.0">
+        <columns>
+          <TableColumn fx:id="fNom" prefWidth="112.0" text="Nom" />
+          <TableColumn fx:id="fPrenom" prefWidth="101.0" text="Prenom" />
+            <TableColumn fx:id="fCin" prefWidth="83.0" text="Cin" />
+            <TableColumn fx:id="fEmail" minWidth="4.0" prefWidth="105.0" text="Email" />
+            <TableColumn fx:id="fTel" minWidth="0.0" prefWidth="83.0" text="Telephone" />
+            <TableColumn fx:id="fAdresse" prefWidth="188.0" text="Adresse" />
+            <TableColumn fx:id="fSpec" minWidth="0.0" prefWidth="92.0" text="spécialité" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
