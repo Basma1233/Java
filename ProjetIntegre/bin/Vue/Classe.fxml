@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerClasse">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="743.0">
+         <children>
+            <SplitPane dividerPositions="0.543859649122807" layoutX="135.0" layoutY="97.0" prefHeight="400.0" prefWidth="531.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <items>
+                  <AnchorPane id="AnchorPaneSalle" minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="375.0" style="-fx-background-color: #333645;">
+                     <children>
+                        <GridPane id="GridPaneSalle" layoutX="73.0" layoutY="3.0" prefHeight="196.0" prefWidth="255.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="10.0" prefWidth="111.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="149.0" minWidth="10.0" prefWidth="144.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Nom" textFill="WHITE" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font></Label>
+                              <Label text="Niveau" textFill="WHITE" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font></Label>
+                              <TextField fx:id="txtnom" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label text="Capacite" textFill="WHITE" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font></Label>
+                              <ComboBox fx:id="cbniveau" prefWidth="150.0" visibleRowCount="6" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TextField fx:id="txtcapacite" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                           </children>
+                        </GridPane>
+                        <HBox layoutX="38.0" layoutY="180.0" prefHeight="32.0" prefWidth="335.0" spacing="20.0">
+                           <children>
+                              <Button id="ajouterprojection" fx:id="ajouterclasse" mnemonicParsing="false" onAction="#ajouterClasse" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: #00A2D3;" text="Ajouter" textFill="WHITE">
+                                 <graphic>
+                                    <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/ajouter.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button id="supprimerprojection" fx:id="supprimerclasse" mnemonicParsing="false" onAction="#supprimerClasse" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: #00A2D3;" text="Supprimer" textFill="WHITE">
+                                 <graphic>
+                                    <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/supprimer.PNG" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button id="modifierprojection" fx:id="modifierclasse" mnemonicParsing="false" onAction="#modifierClasse" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: #00A2D3;" text="Modifier" textFill="WHITE">
+                                 <graphic>
+                                    <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/modifier.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <Button layoutX="94.0" layoutY="339.0" mnemonicParsing="false" onAction="#afficherFenetrePrincipal" prefHeight="33.0" prefWidth="213.0" style="-fx-background-color: #00A2D3;" text="Retourner au menu principale" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/retour.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Separator layoutY="317.0" prefHeight="8.0" prefWidth="400.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="363.0" style="-fx-background-color: #00A2D3;">
+                     <children>
+                        <TableView fx:id="listeclasses" layoutX="-1.0" layoutY="78.0" onMouseClicked="#onClickLine" prefHeight="320.0" prefWidth="335.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="78.0">
+                           <columns>
+                              <TableColumn fx:id="col_nom" prefWidth="119.0" text="Nom" />
+                              <TableColumn fx:id="col_niveau" minWidth="0.0" prefWidth="99.0" text="Niveau" />
+                              <TableColumn fx:id="col_capacite" prefWidth="147.0" text="Capacite" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="61.0" layoutY="14.0" text="Liste des classes" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

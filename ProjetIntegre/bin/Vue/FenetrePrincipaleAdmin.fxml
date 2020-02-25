@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerFenetrePrincipaleAdmin">
+   <children>
+      <SplitPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #333645;">
+               <children>
+                  <Button layoutX="453.0" mnemonicParsing="false" onAction="#deconnecter" prefHeight="43.0" prefWidth="145.0" style="-fx-background-color: #7156DD;" text="Déconnecxion" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/deconnexion.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button layoutX="309.0" layoutY="94.0" mnemonicParsing="false" onAction="#gestionSalle" prefHeight="130.0" prefWidth="230.0" style="-fx-background-color: #00A2D3;" text="Gestion Salle" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="120.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/salle.PNG" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="16.0" />
+                     </font></Button>
+                  <Button layoutX="309.0" layoutY="235.0" mnemonicParsing="false" onAction="#gestionSeance" prefHeight="130.0" prefWidth="230.0" style="-fx-background-color: #00A2D3;" text="Gestion Seance" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="120.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/seance%20.PNG" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font></Button>
+                  <Button layoutX="52.0" layoutY="235.0" mnemonicParsing="false" onAction="#gestionMatiere" prefHeight="130.0" prefWidth="230.0" style="-fx-background-color: #00A2D3;" text="Gestion Matiere" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="120.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/matiere%20.PNG" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="52.0" layoutY="94.0" mnemonicParsing="false" onAction="#gestionClasse" prefHeight="130.0" prefWidth="230.0" style="-fx-background-color: #00A2D3;" text="Gestion Classe" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="120.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/classe.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="242.0" layoutY="32.0" text="Scolarité" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

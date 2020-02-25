@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="427.0" prefWidth="600.0" style="-fx-background-color: #333645;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vue.StudentController">
+   <children>
+      <TextField fx:id="Name" layoutX="125.0" layoutY="40.0" />
+      <TextField fx:id="Login" layoutX="125.0" layoutY="82.0" />
+      <TextField fx:id="Password" layoutX="125.0" layoutY="124.0" />
+      <TextField fx:id="classe" layoutX="125.0" layoutY="209.0" />
+      <TextField fx:id="Adress" layoutX="125.0" layoutY="254.0" />
+      <TextField fx:id="Mail" layoutX="125.0" layoutY="299.0" />
+      <TextField fx:id="Sex" layoutX="125.0" layoutY="342.0" />
+      <Label layoutX="28.0" layoutY="44.0" text="Name" textFill="WHITE" />
+      <Label layoutX="28.0" layoutY="86.0" text="Login" textFill="WHITE" />
+      <Label layoutX="28.0" layoutY="128.0" text="Password" textFill="WHITE" />
+      <Label layoutX="28.0" layoutY="172.0" text="DateOfBrith" textFill="WHITE" />
+      <Label layoutX="28.0" layoutY="213.0" text="Classe" textFill="WHITE" />
+      <Label layoutX="28.0" layoutY="258.0" text="Adress" textFill="WHITE" />
+      <Label layoutX="28.0" layoutY="303.0" text="Mail" textFill="WHITE" />
+      <Label layoutX="28.0" layoutY="346.0" text="Sex" textFill="WHITE" />
+      <Button fx:id="AddButton" layoutX="125.0" layoutY="382.0" mnemonicParsing="false" onAction="#AddSudent" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: green;" text="Add" />
+      <ListView fx:id="liststudent" layoutX="358.0" layoutY="67.0" onMouseClicked="#GetStudent" prefHeight="302.0" prefWidth="200.0" />
+      <DatePicker fx:id="DateOfBirth" layoutX="125.0" layoutY="168.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="rech" layoutX="391.0" layoutY="40.0" onKeyTyped="#rechercherStudent" prefWidth="168.0" />
+      <ImageView fitHeight="25.0" fitWidth="57.0" layoutX="358.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/chercher.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="743.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerSeance">
+   <children>
+      <SplitPane dividerPositions="0.42375168690958165" layoutX="135.0" layoutY="97.0" prefHeight="400.0" prefWidth="531.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane id="AnchorPaneSalle" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #333645;">
+               <children>
+                  <GridPane id="GridPaneSalle" layoutX="19.0" prefHeight="109.0" prefWidth="255.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="127.0" minWidth="10.0" prefWidth="127.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="149.0" minWidth="10.0" prefWidth="128.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ComboBox fx:id="cbjour" prefWidth="150.0" promptText="Jours" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <ComboBox fx:id="cbclasse" prefWidth="150.0" promptText="Classes" GridPane.rowIndex="1" />
+                        <ComboBox fx:id="cbmatiere" prefWidth="150.0" promptText="Matieres" GridPane.rowIndex="3" />
+                        <ComboBox fx:id="cbsalle" prefWidth="150.0" promptText="Salles" GridPane.rowIndex="5" />
+                        <ComboBox fx:id="cbprof" prefHeight="25.0" prefWidth="144.0" promptText="Professeurs" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <ComboBox fx:id="cbhoraire" prefWidth="150.0" promptText="Horaires" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                     </children>
+                  </GridPane>
+                  <HBox layoutX="11.0" layoutY="146.0" prefHeight="27.0" prefWidth="290.0" spacing="20.0">
+                     <children>
+                        <Button id="ajouterprojection" fx:id="ajouterseance" mnemonicParsing="false" onAction="#ajouterSeance" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #00A2D3;" text="Ajouter" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/ajouter.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Button id="supprimerprojection" fx:id="supprimerseance" mnemonicParsing="false" onAction="#supprimerSeance" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #00A2D3;" text="Supprimer" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="17.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/supprimer.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Button id="modifierprojection" fx:id="modifierseance" mnemonicParsing="false" onAction="#modifierSeance" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #00A2D3;" text="Modifier" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="14.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/modifier.jpg" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                     </children>
+                  </HBox>
+                  <Button layoutX="44.0" layoutY="347.0" mnemonicParsing="false" onAction="#afficherFenetrePrincipal" prefHeight="33.0" prefWidth="207.0" style="-fx-background-color: #00A2D3;" text="Retourner au menu principale" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/retour.PNG" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Separator layoutY="332.0" prefHeight="9.0" prefWidth="311.0" />
+                  <Separator layoutY="185.0" prefHeight="9.0" prefWidth="311.0" />
+                  <HBox layoutX="24.0" layoutY="239.0" prefHeight="45.0" prefWidth="246.0">
+                     <children>
+                        <ComboBox fx:id="cbclasseemploi" prefHeight="33.0" prefWidth="120.0" promptText="Classes" />
+                        <Button fx:id="afficheremploiclasse" mnemonicParsing="false" onAction="#afficherEmploiClasse" prefHeight="33.0" prefWidth="126.0" style="-fx-background-color: #00A2D3;" text="Afficher Emploi" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/emploi.PNG" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="24.0" layoutY="284.0" prefHeight="33.0" prefWidth="246.0">
+                     <children>
+                        <ComboBox fx:id="cbprofemploi" prefHeight="33.0" prefWidth="120.0" promptText="Professeurs" />
+                        <Button fx:id="afficheremploiprof" mnemonicParsing="false" onAction="#afficherEmploiProf" prefHeight="33.0" prefWidth="125.0" style="-fx-background-color: #00A2D3;" text="Afficher Emploi" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/emploi.PNG" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                     </children>
+                  </HBox>
+                  <Label layoutX="16.0" layoutY="199.0" text="Afficher les emplois du temps" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="333.0" style="-fx-background-color: #00A2D3;">
+               <children>
+                  <TableView id="listeseances" fx:id="listeseances" layoutX="14.0" layoutY="78.0" onMouseClicked="#onClickLine" prefHeight="320.0" prefWidth="441.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="78.0">
+                     <columns>
+                        <TableColumn id="classe" fx:id="col_classe" prefWidth="64.0" text="Classe" />
+                        <TableColumn id="matiere" fx:id="col_matiere" prefWidth="86.0" text="Matiere" />
+                        <TableColumn id="salle" fx:id="col_salle" text="Salle" />
+                        <TableColumn id="professeur" fx:id="col_prof" prefWidth="76.0" text="Professeur" />
+                        <TableColumn id="horaire" fx:id="col_horaire" prefWidth="69.0" text="Horaire" />
+                        <TableColumn id="jour" fx:id="col_jour" prefWidth="65.0" text="Jour" />
+                     </columns>
+                  </TableView>
+                  <Label layoutX="108.0" layoutY="14.0" text="Liste des séances" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
