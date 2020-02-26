@@ -33,7 +33,6 @@ public class LoginForm extends Application {
 
     public static Stage window;
     public static Scene primaryScene;
-
     public static User user;
     public static String date;
     public static Student s;// pour stocker l'utilisateur courant
@@ -78,7 +77,6 @@ public class LoginForm extends Application {
             String password = String.valueOf(pwBox.getText());
 
             String query = "SELECT * FROM `user` WHERE `login`=? AND `password`=?";
-
             try {
                 ps = (PreparedStatement) ConnexionBd.getConnexion().prepareStatement(query);
                 ps.setString(1, login);
@@ -95,11 +93,15 @@ public class LoginForm extends Application {
 
                     //tester le type de celui qui se connecte
                     if (user.getType().equals("admin")) {
-
                         interfaces = "/Vue/FenetrePrincipaleAdmin.fxml";
                     } else if (user.getType().equals("prof")) {
-
                         interfaces = "/Vue/Prof.fxml";
+                        /*
+                        * yzid else if lahne
+                         */
+                    }
+                    else if (user.getType().equals("client")) {
+                        interfaces = "/GUI/AfficheEventClient.fxml";
                         /*
                         * yzid else if lahne
                          */

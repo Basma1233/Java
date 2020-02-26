@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ModifierEvenementController">
+      <stylesheets>
+    </stylesheets>
+   <children>
+      <Pane layoutX="19.0" layoutY="8.0" prefHeight="377.0" prefWidth="566.0">
+         <children>
+            <Label layoutX="42.0" layoutY="138.0" text="lieu" />
+            <Label layoutX="42.0" layoutY="100.0" text="titre" />
+            <Label layoutX="12.0" layoutY="186.0" text="nombre places" />
+            <Label layoutX="21.0" layoutY="239.0" text="date debut" />
+            <TextField fx:id="titre" layoutX="122.0" layoutY="105.0" />
+            <TextField fx:id="lieu" layoutX="122.0" layoutY="147.0" />
+            <TextField fx:id="nbp" layoutX="122.0" layoutY="182.0" />
+            <TextField fx:id="dd" layoutX="122.0" layoutY="235.0" />
+            <Button fx:id="ajout" layoutX="378.0" layoutY="325.0" mnemonicParsing="false" onAction="#modifier" text="modifier" />
+            <Label layoutX="32.0" layoutY="286.0" text="date fin" />
+            <TextField fx:id="df" layoutX="122.0" layoutY="282.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

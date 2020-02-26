@@ -47,6 +47,20 @@ public class ControllerFenetrePrincipaleAdmin {
 		}
 
 	}
+        
+	@FXML
+	public void gestionEvent(){
+		try
+		{
+			final FXMLLoader fxmlLoader =
+					new FXMLLoader(this.getClass().getResource("/GUI/AfficheEvents.fxml"));
+			    Parent root1 = (Parent) fxmlLoader.load();
+			    LoginForm.window.setScene(new Scene(root1));
+		} catch(Exception e1) {
+			e1.printStackTrace();
+		}
+
+	}
 
 
 	@FXML

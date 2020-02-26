@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="530.0" prefWidth="582.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerFenetrePrincipaleAdmin">
+<AnchorPane prefHeight="677.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerFenetrePrincipaleAdmin">
    <children>
-      <SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="610.0">
+      <SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="677.0" prefWidth="610.0">
          <items>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="441.0" prefWidth="598.0" style="-fx-background-color: #333645;">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="660.0" prefWidth="608.0" style="-fx-background-color: #333645;">
                <children>
                   <Button layoutX="557.0" mnemonicParsing="false" onAction="#deconnecter" prefHeight="43.0" prefWidth="51.0" style="-fx-background-color: red;" textFill="WHITE">
                      <graphic>
@@ -95,6 +95,18 @@
                      </graphic>
                      <font>
                         <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="52.0" layoutY="523.0" mnemonicParsing="false" onAction="#gestionEvent" prefHeight="130.0" prefWidth="489.0" style="-fx-background-color: #00A2D3;" text="Gestion Evenement" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="120.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/classe.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="16.0" />
                      </font>
                   </Button>
                </children>
