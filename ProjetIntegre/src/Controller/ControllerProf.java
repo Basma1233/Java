@@ -159,7 +159,7 @@ public class ControllerProf implements Initializable{
 				Alert alert = new Alert(AlertType.ERROR);
 				alert.setTitle("Ajout d'un prof");
 				alert.setHeaderText("Ajout");
-				alert.setContentText("Prof existe déjà !");
+				alert.setContentText("Prof existe deja !");
 				alert.showAndWait();
 	          }
 		}

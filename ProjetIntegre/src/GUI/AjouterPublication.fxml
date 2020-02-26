@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="483.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AjouterPublicationController">
+   <children>
+      <TextArea fx:id="taMessage" layoutX="39.0" layoutY="135.0" prefHeight="295.0" prefWidth="454.0" />
+      <Button fx:id="btnAjouter" layoutX="176.0" layoutY="443.0" mnemonicParsing="false" onMouseClicked="#Ajouter" text="Ajouter" />
+      <TextField fx:id="tfTitre" layoutX="39.0" layoutY="64.0" prefHeight="26.0" prefWidth="454.0" />
+      <Label layoutX="257.0" layoutY="32.0" text="Titre" />
+      <Label layoutX="245.0" layoutY="103.0" text="Message" />
+      <Button fx:id="btnRetour" layoutX="299.0" layoutY="443.0" mnemonicParsing="false" onMouseClicked="#Back" text="Retour" />
+   </children>
+</AnchorPane>

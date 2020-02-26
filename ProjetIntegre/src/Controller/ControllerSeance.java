@@ -321,13 +321,13 @@ public class ControllerSeance implements Initializable{
 				|| cbprof.getValue().equals("") || cbhoraire.getValue().equals("") || cbjour.getValue().equals("")){
 
 			Alert alert = new Alert(AlertType.ERROR);
-			alert.setTitle("Ajout d'une séance");
+			alert.setTitle("Ajout d'une seance");
 			alert.setHeaderText("Ajout");
-			alert.setContentText("Vous devez préciser toutes les informations concernant cette séance !");
+			alert.setContentText("Vous devez preciser toutes les informations concernant cette seance !");
 			alert.showAndWait();
 
 		}
-		// les informations à afficher dans l'eamil
+		// les informations a afficher dans l'eamil
 		String matiere = cbmatiere.getValue().getNom();
 		String classe = cbclasse.getValue().getNom();
 		String salle = cbsalle.getValue().getNom();
@@ -359,13 +359,13 @@ public class ControllerSeance implements Initializable{
 
 
 
-							String message = "Nous vous informons que vous avez une nouvelle séance : "
-									+ " Séance de : "+matiere
+							String message = "Nous vous informons que vous avez une nouvelle seance : "
+									+ " Seance de : "+matiere
 									+" Pour le classe : "+classe
 									+" Dans la salle : "+salle
-									+" Le : "+jour+" à : "+horaire;
+									+" Le : "+jour+" Ã  : "+horaire;
 							System.out.println(LoginForm.user.getEmail());
-							EnvoyerEmail.sendMail("sediridhia@gmail.com", "Nouvelle séance", message);
+							EnvoyerEmail.sendMail("sediridhia@gmail.com", "Nouvelle seance", message);
 						} catch (Exception e) {
 							// TODO Auto-generated catch block
 							e.printStackTrace();
@@ -379,7 +379,7 @@ public class ControllerSeance implements Initializable{
 				Alert alert = new Alert(AlertType.ERROR);
 				alert.setTitle("Ajout d'une seance");
 				alert.setHeaderText("Ajout");
-				alert.setContentText("Séance impossible, veuillez bien vérifier vos chois !");
+				alert.setContentText("Seance impossible, veuillez bien verifier vos chois !");
 				alert.showAndWait();
 	          }
 		}
@@ -452,9 +452,9 @@ public class ControllerSeance implements Initializable{
 				|| cbprof.getValue().equals("") || cbhoraire.getValue().equals("") || cbjour.getValue().equals("")){
 
 			Alert alert = new Alert(AlertType.ERROR);
-			alert.setTitle("Ajout d'une séance");
+			alert.setTitle("Ajout d'une sï¿½ance");
 			alert.setHeaderText("Ajout");
-			alert.setContentText("Vous devez préciser toutes les informations concernant cette séance !");
+			alert.setContentText("Vous devez preciser toutes les informations concernant cette seance !");
 			alert.showAndWait();
 
 		}
@@ -484,7 +484,7 @@ public class ControllerSeance implements Initializable{
 				Alert alert = new Alert(AlertType.ERROR);
 				alert.setTitle("Ajout d'une seance");
 				alert.setHeaderText("Ajout");
-				alert.setContentText("Séance impossible, veuillez bien vérifier vos chois !");
+				alert.setContentText("Seance impossible, veuillez bien verifier vos chois !");
 				alert.showAndWait();
 	          }
 	}

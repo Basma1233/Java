@@ -219,7 +219,7 @@ public class DAOSalle extends DAO <Salle>{
 
 		   catch (SQLException e)
 		       {
-					System.out.println("Erreur de création  du tabe");
+					System.out.println("Erreur de creation  du tabe");
 					e.printStackTrace();
 		       }
 	}

@@ -144,7 +144,7 @@ public class ControllerSalle implements Initializable{
 				Alert alert = new Alert(AlertType.ERROR);
 				alert.setTitle("Ajout d'une salle");
 				alert.setHeaderText("Ajout");
-				alert.setContentText("Salle existe déjà !");
+				alert.setContentText("Salle existe deja !");
 				alert.showAndWait();
 	          }
 

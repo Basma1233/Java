@@ -1,0 +1,109 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Entities;
+
+/**
+ *
+ * @author hamza
+ */
+public class User {
+    private int id;
+    private String email;
+    private String nom;
+    private String prenom;
+    private int numTel;
+    private String role;
+
+    public User(int id, String email, String nom, String prenom, int numTel) {
+        this.id = id;
+        this.email = email;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.numTel = numTel;
+    }
+
+    public User(int id, String nomm, String prenom) {
+        this.id = id;
+        this.nom = nomm;
+        this.prenom = prenom;
+    }
+
+    public int getNumTel() {
+        return numTel;
+    }
+
+    public void setNumTel(int numTel) {
+        this.numTel = numTel;
+    }
+    
+    
+
+    public User(int id) {
+        this.id = id;
+    }
+
+    public User(int id, String email, String nom, String prenom, String role) {
+        this.id = id;
+        this.email = email;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.role = role;
+    }
+
+    public User(String email, String nom, String prenom, String role) {
+        this.email = email;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.role = role;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public String getPrenom() {
+        return prenom;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" + "id=" + id + ", email=" + email + ", nom=" + nom + ", prenom=" + prenom + ", role=" + role + '}';
+    }
+    
+    
+}

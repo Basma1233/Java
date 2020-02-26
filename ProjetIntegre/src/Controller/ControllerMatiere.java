@@ -142,7 +142,7 @@ public class ControllerMatiere implements Initializable{
 				Alert alert = new Alert(AlertType.ERROR);
 				alert.setTitle("Ajout d'une matiere");
 				alert.setHeaderText("Ajout");
-				alert.setContentText("Matiere existe déjà !");
+				alert.setContentText("Matiere existe deja !");
 				alert.showAndWait();
 	          }
 

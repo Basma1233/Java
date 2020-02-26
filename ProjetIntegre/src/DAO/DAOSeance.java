@@ -231,7 +231,7 @@ public class DAOSeance extends DAO <Seance>{
 
 	    catch (SQLException ex)
 	        {
-		        System.out.print("Erreur de recupération idSeance");
+		        System.out.print("Erreur de recuperation idSeance");
 			    return -1;
 	        }
 	}

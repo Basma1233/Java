@@ -17,7 +17,7 @@ public class ConnexionBd {
 	   	/*========================================================================================================================*/
 	   	/*========================================================================================================================*/
 
-	   /*Singleton===>Il n'est pas possible de créer plus qu'un seul instance du classe
+	   /*Singleton===>Il n'est pas possible de creer plus qu'un seul instance du classe
 	   private static ConnexionBd cnxBD;
 	   private ConnexionBd(){
 
